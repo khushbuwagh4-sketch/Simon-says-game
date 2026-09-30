@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    min-height: 100vh;
+    padding: 30px 10px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.score-board {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #222;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.flash {
+    background-color: white !important;
+}
+
+.user-flash {
+    opacity: 0.6;
+}
+
+#restart-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#restart-btn:hover {
+    background-color: #444;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+
+    .game-container {
+        grid-template-columns: repeat(2, 120px);
+        gap: 15px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 120px;
+    }
+
+}
